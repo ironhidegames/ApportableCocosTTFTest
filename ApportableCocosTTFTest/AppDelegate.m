@@ -40,6 +40,11 @@
 }
 - (void) applicationDidFinishLaunching:(UIApplication*)application
 {
+#ifdef ANDROID
+    [UIScreen mainScreen].currentMode = [UIScreenMode emulatedMode:UIScreenAspectFitEmulationMode];
+    NSLog(@"Configuring UIScreen for Android.");
+#endif
+    
 	// Init the window
 	window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 	

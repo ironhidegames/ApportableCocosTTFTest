@@ -123,6 +123,7 @@
 		0105FE7B17C65233005CAD4A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0105FE7A17C65233005CAD4A /* AppDelegate.m */; };
 		0105FE7E17C65233005CAD4A /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0105FE7D17C65233005CAD4A /* RootViewController.m */; };
 		0105FE8117C65233005CAD4A /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0105FE8017C65233005CAD4A /* HelloWorldLayer.m */; };
+		0105FE8917C65A5F005CAD4A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0105FE8817C65A5F005CAD4A /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -363,6 +364,7 @@
 		0105FE7F17C65233005CAD4A /* HelloWorldLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
 		0105FE8017C65233005CAD4A /* HelloWorldLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
 		0105FE8217C65233005CAD4A /* GameConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameConfig.h; sourceTree = "<group>"; };
+		0105FE8817C65A5F005CAD4A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -387,6 +389,7 @@
 		0105FD0817C65231005CAD4A = {
 			isa = PBXGroup;
 			children = (
+				0105FE8817C65A5F005CAD4A /* Default-568h@2x.png */,
 				0105FD2417C65231005CAD4A /* ApportableCocosTTFTest */,
 				0105FD1317C65231005CAD4A /* Frameworks */,
 				0105FD1217C65231005CAD4A /* Products */,
@@ -822,6 +825,7 @@
 				0105FD3317C65231005CAD4A /* Icon.png in Resources */,
 				0105FD3517C65231005CAD4A /* Icon@2x.png in Resources */,
 				0105FD3817C65231005CAD4A /* iTunesArtwork in Resources */,
+				0105FE8917C65A5F005CAD4A /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -982,7 +986,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ApportableCocosTTFTest/Prefix.pch;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = ApportableCocosTTFTest/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -997,7 +1004,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ApportableCocosTTFTest/Prefix.pch;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = ApportableCocosTTFTest/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALIDATE_PRODUCT = YES;
