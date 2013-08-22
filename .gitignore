@@ -1,0 +1,9 @@
+.DS_Store
+/*.xcodeproj/project.xcworkspace/xcuserdata/
+/*.xcodeproj/xcuserdata/
+
+/*.approj/assets/*.caf
+/*.approj/assets/*.mp3
+/*.approj/targets/*/*.generated
+/*.approj/targets/*/*.final
+.sconsign.dblite

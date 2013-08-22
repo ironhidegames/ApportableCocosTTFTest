@@ -26,7 +26,7 @@
 // 3rd generation and newer devices: Rotate using UIViewController. Rotation should be supported on iPad apps.
 // TIP:
 // To improve the performance, you should set this value to "kGameAutorotationNone" or "kGameAutorotationCCDirector"
-#if defined(__ARM_NEON__) || TARGET_IPHONE_SIMULATOR
+#if defined(__ARM_NEON__) || defined(APPORTABLE) || TARGET_IPHONE_SIMULATOR
 #define GAME_AUTOROTATION kGameAutorotationUIViewController
 
 // ARMv6 (1st and 2nd generation devices): Don't rotate. It is very expensive
