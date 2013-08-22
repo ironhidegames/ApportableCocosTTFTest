@@ -40,9 +40,17 @@
 
 		// ask director the the window size
 		CGSize size = [[CCDirector sharedDirector] winSize];
+        
+        if (size.width < size.height) {
+            float realHeight = size.width;
+            size.width = size.height;
+            size.height = realHeight;
+        }
 	
 		// position the label on the center of the screen
 		label.position =  ccp( size.width /2 , size.height/2 );
+        NSLog(@"LabelCoords: %@", NSStringFromCGPoint(label.position));
+        NSLog(@"WindowsSize: %@", NSStringFromCGSize(size));
 		
 		// add the label as a child to this Layer
 		[self addChild: label];
