@@ -124,6 +124,7 @@
 		0105FE7E17C65233005CAD4A /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0105FE7D17C65233005CAD4A /* RootViewController.m */; };
 		0105FE8117C65233005CAD4A /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0105FE8017C65233005CAD4A /* HelloWorldLayer.m */; };
 		0105FE8917C65A5F005CAD4A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0105FE8817C65A5F005CAD4A /* Default-568h@2x.png */; };
+		0105FE8B17C6900E005CAD4A /* Comic_Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0105FE8A17C6900E005CAD4A /* Comic_Book.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -365,6 +366,7 @@
 		0105FE8017C65233005CAD4A /* HelloWorldLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
 		0105FE8217C65233005CAD4A /* GameConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameConfig.h; sourceTree = "<group>"; };
 		0105FE8817C65A5F005CAD4A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		0105FE8A17C6900E005CAD4A /* Comic_Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Comic_Book.ttf; path = Resources/Comic_Book.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -439,6 +441,7 @@
 		0105FD2517C65231005CAD4A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0105FE8A17C6900E005CAD4A /* Comic_Book.ttf */,
 				0105FD2617C65231005CAD4A /* Default.png */,
 				0105FD2817C65231005CAD4A /* fps_images.png */,
 				0105FD2A17C65231005CAD4A /* Icon-72.png */,
@@ -826,6 +829,7 @@
 				0105FD3517C65231005CAD4A /* Icon@2x.png in Resources */,
 				0105FD3817C65231005CAD4A /* iTunesArtwork in Resources */,
 				0105FE8917C65A5F005CAD4A /* Default-568h@2x.png in Resources */,
+				0105FE8B17C6900E005CAD4A /* Comic_Book.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

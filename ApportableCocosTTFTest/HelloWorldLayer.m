@@ -36,8 +36,8 @@
 	if( (self=[super init])) {
 		
 		// create and initialize a Label
-		CCLabelTTF *label = [CCLabelTTF labelWithString:@"Hello World" fontName:@"Marker Felt" fontSize:64];
-
+		CCLabelTTF* label = [CCLabelTTF labelWithString:@"Hello World" fontName:@"Marker Felt" fontSize:64];
+        
 		// ask director the the window size
 		CGSize size = [[CCDirector sharedDirector] winSize];
         
@@ -46,6 +46,8 @@
             size.width = size.height;
             size.height = realHeight;
         }
+        
+        //CCLabelTTF * label = [CCLabelTTF labelWithString:@"Hello World" dimensions:CGSizeMake(size.width, size.height) alignment:UITextAlignmentLeft lineBreakMode:UILineBreakModeWordWrap fontName:@"Comic_Book" fontSize:64];
 	
 		// position the label on the center of the screen
 		label.position =  ccp( size.width /2 , size.height/2 );
@@ -54,8 +56,42 @@
 		
 		// add the label as a child to this Layer
 		[self addChild: label];
+        self.label = label;
+        
+        
+        CCSprite* sprite = [CCSprite node];
+        [sprite setTextureRect:CGRectMake(0, 0, 50, 50)];
+        sprite.position = ccp(0,100);
+        [sprite runAction:[CCRepeatForever actionWithAction:[CCSequence actions:
+                                                                [CCMoveBy actionWithDuration:5 position:ccp(size.width,0)],
+                                                                [CCMoveBy actionWithDuration:5 position:ccp(-size.width,0)],
+                                                            nil
+                                                            ]
+                          ]
+         ];
+        
+        [self addChild:sprite];
 	}
 	return self;
+}
+
+-(BOOL)ccTouchBegan:(UITouch *)touch withEvent:(UIEvent *)event{
+    
+    [self.label setString:[NSString stringWithFormat:@"Hello World: %i",arc4random() ]];
+    
+    return YES;
+}
+
+- (void)onEnter
+{
+	[[CCTouchDispatcher sharedDispatcher] addTargetedDelegate:self priority:-1000 swallowsTouches:NO];
+	[super onEnter];
+}
+
+- (void)onExit
+{
+	[[CCTouchDispatcher sharedDispatcher] removeDelegate:self];
+	[super onExit];
 }
 
 // on "dealloc" you need to release all your retained objects
