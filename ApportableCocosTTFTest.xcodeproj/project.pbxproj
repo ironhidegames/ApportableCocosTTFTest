@@ -125,6 +125,7 @@
 		0105FE8117C65233005CAD4A /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0105FE8017C65233005CAD4A /* HelloWorldLayer.m */; };
 		0105FE8917C65A5F005CAD4A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0105FE8817C65A5F005CAD4A /* Default-568h@2x.png */; };
 		0105FE8B17C6900E005CAD4A /* Comic_Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0105FE8A17C6900E005CAD4A /* Comic_Book.ttf */; };
+		012F918017D7B20800398616 /* AutoreleaseTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 012F917F17D7B20800398616 /* AutoreleaseTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -367,6 +368,8 @@
 		0105FE8217C65233005CAD4A /* GameConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameConfig.h; sourceTree = "<group>"; };
 		0105FE8817C65A5F005CAD4A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		0105FE8A17C6900E005CAD4A /* Comic_Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Comic_Book.ttf; path = Resources/Comic_Book.ttf; sourceTree = "<group>"; };
+		012F917E17D7B20800398616 /* AutoreleaseTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoreleaseTest.h; sourceTree = "<group>"; };
+		012F917F17D7B20800398616 /* AutoreleaseTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoreleaseTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -431,6 +434,8 @@
 				0105FE7F17C65233005CAD4A /* HelloWorldLayer.h */,
 				0105FE8017C65233005CAD4A /* HelloWorldLayer.m */,
 				0105FE8217C65233005CAD4A /* GameConfig.h */,
+				012F917E17D7B20800398616 /* AutoreleaseTest.h */,
+				012F917F17D7B20800398616 /* AutoreleaseTest.m */,
 				0105FD2517C65231005CAD4A /* Resources */,
 				0105FD3917C65231005CAD4A /* libs */,
 				0105FE7517C65233005CAD4A /* Supporting Files */,
@@ -939,6 +944,7 @@
 				0105FE7B17C65233005CAD4A /* AppDelegate.m in Sources */,
 				0105FE7E17C65233005CAD4A /* RootViewController.m in Sources */,
 				0105FE8117C65233005CAD4A /* HelloWorldLayer.m in Sources */,
+				012F918017D7B20800398616 /* AutoreleaseTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1038,6 +1044,7 @@
 				0105FE8717C65233005CAD4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

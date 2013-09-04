@@ -11,6 +11,7 @@
 #import "AppDelegate.h"
 #import "GameConfig.h"
 #import "HelloWorldLayer.h"
+#import "AutoreleaseTest.h"
 #import "RootViewController.h"
 
 @implementation AppDelegate
@@ -116,6 +117,12 @@
 	
 	// Run the intro Scene
 	[[CCDirector sharedDirector] runWithScene: [HelloWorldLayer scene]];
+    
+    [[[AutoreleaseTest alloc] initWithTag:@"BUG"] autorelease];
+    
+    @autoreleasepool {
+        [[[AutoreleaseTest alloc] initWithTag:@"WITHFIX"] autorelease];
+    }
 }
 
 
